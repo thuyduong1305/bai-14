@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,100;1,9..40,400;1,9..40,500;1,9..40,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --color-two: #f6d8c3;
+    --color-one: #232323;
+    --font: 'DM Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font);
+}
+.container {
+    width: 100%;
+    /* max-width: 1200px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+       padding-left: 15px;
+       padding-right: 15px;
+    }
+}
+a {
+    text-decoration: none;
+}
+
+/* Button */
+.button{
+    display: inline-flex;
+    align-items: center;
+    background: gray;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-main{
+    background: var(--color-two);
+    color: var(--color-one);
+}
+.button-main:hover{
+    background: white;
+    
+}
+/* End button */
